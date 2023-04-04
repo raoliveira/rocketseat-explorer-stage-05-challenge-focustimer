@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+span {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    
+}
+
+:root {
+
+    font-size: 62.5%;
+
+    --bg-color: #ffffff;
+    --bg-button: #e1e1e6;
+    --bg-button-hover: #02799d;
+
+    --base-color: 194;
+    --primary-color: hsl(var(--base-color), 100%, 63%);
+    --bg-primary-light: hsla(var(--base-color), 100%, 63%, 0.13);
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+
+    display: grid;
+    justify-self: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    max-width: 82.1rem;
+
+    align-items: center;
+    height: 100vh;
+    
+}
+.hide {
+    display: none;
+}
+
+.time {
+    margin-right: 19rem;
+} 
+.clock, .controls {
+    width: 32.1rem;
+}
+
+
+.clock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    font-family: 'Roboto';
+    width: 35.1rem;
+    height: 14.8rem;
+    font-weight: 500;
+    font-size: 12.6rem;
+    line-height: 14.8rem;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    
+}
+
+
+#sounds {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: min-content;
+    gap: 3.2rem;
+    min-width: 30rem;
+}
+
+#sounds button {
+    width: 13.8rem;
+    height: 15.2rem;
+    border-radius: 2.4rem;
+    
+}
+
+#sounds .play {
+    border: 2px solid rgb(41, 25, 112);
+
+}
+
+
+button:hover {
+    background-color: var(--bg-button-hover);
+    cursor: pointer;
+}
+.controls {
+    display: flex;
+    gap: 4rem;
+}
+.controls button {
+    background-color: var(--bg-color);
+    border-radius: 0.4rem;
+    border: 0;
+    transition: ease-in-out 0.5s ;
+    
+}
+#timer button:hover {
+    background-color: var(--bg-button-hover);
+    transform: scale(1.1);
+} 
+
+
+@media (max-width: 700px){
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .time {
+        margin-right: 0;
+    }
+  
+
+
+}
+
+/*
+
+    
+
+
+
+
+/* #sounds button svg path {
+    fill: var(--bg-button);
+} */
+/*
+
+
+
+
+
+
+*/
